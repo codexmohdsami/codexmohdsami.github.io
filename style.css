@@ -833,3 +833,16 @@ a.contact-value:hover { color: var(--wine-light); }
   .timeline::before { left: 16px; }
   .timeline-dot { margin-left: 11px; }
 }
+.project-image, .cert-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image,
+.cert-card:hover .cert-image {
+  transform: scale(1.03);
+}
